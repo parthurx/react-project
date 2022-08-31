@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+.images{
+  position: absolute;
+  left: 35%;
+  top: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pokemon_data{
+  position: absolute;
+  left: 35%;
+  top: 54%;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-search{
+  position: absolute;
+  top: 65%;
+  left: 15%;
+  width: 65%;
+}
+
+.input__search{
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px  solid #333;
+  border-radius: 5px;
+  font-weight: 600px;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+.buttons{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 65%; 
+  transform: translate(-57%, 0);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+}
+
+button{
+  width:50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(5px, 5vw, 1rem);
+  font-weight: 600;
   color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active{
+
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
+
+
+.pokemon_img{
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  transform: translate(-63%, 20%);
+  height:  20%;
 }
